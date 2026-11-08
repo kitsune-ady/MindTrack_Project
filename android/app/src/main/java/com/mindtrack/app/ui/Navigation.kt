@@ -27,6 +27,10 @@ import com.mindtrack.app.ui.entry.EntryScreen
 import com.mindtrack.app.ui.home.HomeScreen
 import com.mindtrack.app.ui.insights.InsightsScreen
 import com.mindtrack.app.ui.log.LogScreen
+import com.mindtrack.app.ui.onboarding.OnboardingScreen
+import com.mindtrack.app.MindTrackApp
+import androidx.compose.runtime.remember
+import androidx.compose.ui.platform.LocalContext
 import com.mindtrack.app.ui.profile.ProfileScreen
 import java.time.LocalDate
 
@@ -43,6 +47,8 @@ fun entryRoute(date: LocalDate = LocalDate.now()) = "entry/$date"
 @Composable
 fun AppNavigation() {
     val nav = rememberNavController()
+    val settings = (LocalContext.current.applicationContext as MindTrackApp).settings
+    val startRoute = remember { if (settings.onboarded.value) Tab.Home.route else "onboarding" }
     val entry by nav.currentBackStackEntryAsState()
     val dest = entry?.destination
     val showBar = Tab.entries.any { t -> dest?.hierarchy?.any { it.route == t.route } == true }
@@ -64,7 +70,10 @@ fun AppNavigation() {
             }
         }
     }) { padding ->
-        NavHost(nav, startDestination = Tab.Home.route, modifier = Modifier.padding(padding)) {
+        NavHost(nav, startDestination = startRoute, modifier = Modifier.padding(padding)) {
+            composable("onboarding") {
+                OnboardingScreen(onFinished = { nav.navigate(Tab.Home.route) { popUpTo("onboarding") { inclusive = true } } })
+            }
             composable(Tab.Home.route) { HomeScreen(onOpenEntry = { nav.navigate(entryRoute(it)) }, onOpenInsights = { nav.navigate(Tab.Insights.route) }) }
             composable(Tab.Log.route) { LogScreen(onOpenEntry = { nav.navigate(entryRoute(it)) }) }
             composable(Tab.Insights.route) { InsightsScreen() }

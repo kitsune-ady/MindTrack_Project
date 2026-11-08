@@ -10,6 +10,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.compose.ui.platform.LocalContext
+import com.mindtrack.app.MindTrackApp
 import com.mindtrack.app.data.DailyRecord
 import com.mindtrack.app.data.RecordRepository
 import com.mindtrack.app.ui.factory
@@ -27,9 +29,10 @@ class HomeViewModel(repo: RecordRepository) : ViewModel() {
 fun HomeScreen(onOpenEntry: (LocalDate) -> Unit, onOpenInsights: () -> Unit) {
     val vm: HomeViewModel = viewModel(factory = factory { HomeViewModel(it) })
     val today: DailyRecord? by vm.today.collectAsStateWithLifecycle()
+    val name by (LocalContext.current.applicationContext as MindTrackApp).settings.name.collectAsStateWithLifecycle()
 
     Column(Modifier.fillMaxSize().padding(20.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-        Text("Today", style = MaterialTheme.typography.headlineMedium)
+        Text(if (name.isBlank()) "Today" else "Hi, $name", style = MaterialTheme.typography.headlineMedium)
         Text("A few honest minutes is enough. There's no wrong way to log a day.",
             style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.secondary)
 

@@ -10,7 +10,10 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.mindtrack.app.MindTrackApp
 import com.mindtrack.app.data.RecordRepository
+import java.time.Instant
+import java.time.ZoneId
 import com.mindtrack.app.ui.factory
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -40,6 +43,11 @@ fun ProfileScreen() {
     Column(Modifier.fillMaxSize().padding(20.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
         Text("Profile & privacy", style = MaterialTheme.typography.headlineMedium)
         Text("Your entries are stored only on this device. Nothing is uploaded, and device backup is turned off.")
+
+        val st = (ctx.applicationContext as MindTrackApp).settings
+        if (st.consentAt > 0) Text(
+            "Privacy notice v${st.consentVersion} accepted on ${Instant.ofEpochMilli(st.consentAt).atZone(ZoneId.systemDefault()).toLocalDate()}",
+            style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.secondary)
 
         Button(onClick = {
             vm.exportCsv { csv ->
