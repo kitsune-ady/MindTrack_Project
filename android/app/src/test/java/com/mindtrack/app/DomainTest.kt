@@ -26,4 +26,12 @@ class DomainTest {
         val recs = listOf(DailyRecord("2026-11-06", totalMinutes = 100), DailyRecord("2026-11-05", totalMinutes = 200))
         assertEquals(150, buildUsageBuckets(Period.FOUR_WEEKS, end, recs).last().avgMinutes)
     }
+    @Test fun reminderLaterTodayWaitsUntilToday() {
+        val now = java.time.LocalDateTime.of(2026, 11, 8, 9, 0)
+        assertEquals(11L * 3600_000, nextReminderDelayMillis(now, 20, 0))
+    }
+    @Test fun reminderAlreadyPassedGoesToTomorrow() {
+        val now = java.time.LocalDateTime.of(2026, 11, 8, 21, 0)
+        assertEquals(23L * 3600_000, nextReminderDelayMillis(now, 20, 0))
+    }
 }

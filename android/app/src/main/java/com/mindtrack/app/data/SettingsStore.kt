@@ -19,6 +19,18 @@ class SettingsStore(context: Context) {
     private val _name = MutableStateFlow(p.getString("name", "") ?: "")
     val name: StateFlow<String> = _name
 
+    private val _reminderOn = MutableStateFlow(p.getBoolean("reminder_on", false))
+    val reminderEnabled: StateFlow<Boolean> = _reminderOn
+    private val _reminderHour = MutableStateFlow(p.getInt("reminder_hour", 20))
+    val reminderHour: StateFlow<Int> = _reminderHour
+    private val _reminderMinute = MutableStateFlow(p.getInt("reminder_minute", 0))
+    val reminderMinute: StateFlow<Int> = _reminderMinute
+
+    fun setReminder(enabled: Boolean, hour: Int, minute: Int) {
+        p.edit().putBoolean("reminder_on", enabled).putInt("reminder_hour", hour).putInt("reminder_minute", minute).apply()
+        _reminderOn.value = enabled; _reminderHour.value = hour; _reminderMinute.value = minute
+    }
+
     val step: Int get() = p.getInt("step", 0)
     val baselineUsage: Int? get() = p.getInt("baseline_usage", -1).takeIf { it >= 0 }
     val baselineWellbeing: Int? get() = p.getInt("baseline_wellbeing", -1).takeIf { it >= 0 }

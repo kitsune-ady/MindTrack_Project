@@ -74,3 +74,10 @@ fun buildUsageBuckets(period: Period, end: LocalDate, records: List<DailyRecord>
 }
 
 fun daysLogged(buckets: List<Bucket>) = buckets.sumOf { it.daysLogged }
+
+/** Milliseconds from [now] until the next occurrence of hour:minute (today if still ahead, else tomorrow). */
+fun nextReminderDelayMillis(now: java.time.LocalDateTime, hour: Int, minute: Int): Long {
+    var next = now.toLocalDate().atTime(hour, minute)
+    if (!next.isAfter(now)) next = next.plusDays(1)
+    return java.time.Duration.between(now, next).toMillis()
+}
