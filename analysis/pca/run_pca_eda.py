@@ -88,7 +88,7 @@ def save_score_plot(scores: np.ndarray, target: pd.Series, variance: np.ndarray)
     draw = ImageDraw.Draw(image)
     navy, grid, ink = "#17324D", "#D9E1EA", "#263746"
     draw.text((65, 35), "Students projected onto PC1 and PC2", font=get_font(31, True), fill=navy)
-    draw.text((67, 82), "PCA uses predictors only; color shows the provisional Beck score group", font=get_font(18), fill="#5E6D7B")
+    draw.text((67, 82), "PCA uses predictors only; color shows the project-defined Beck score group", font=get_font(18), fill="#5E6D7B")
     left, top, right, bottom = 140, 160, 1350, 750
     x, y = scores[:, 0], scores[:, 1]
     xlim = (float(x.min()), float(x.max()))
@@ -118,7 +118,7 @@ def save_score_plot(scores: np.ndarray, target: pd.Series, variance: np.ndarray)
     draw.ellipse((left + 320, 799, left + 336, 815), fill=colors[0])
     draw.text((left + 345, 798), "Below 11", font=get_font(16), fill=ink)
     draw.ellipse((left + 470, 799, left + 486, 815), fill=colors[1])
-    draw.text((left + 495, 798), "11+ (provisional)", font=get_font(16), fill=ink)
+    draw.text((left + 495, 798), "11+ score group", font=get_font(16), fill=ink)
     draw.text((left, 875), "Visualization only: overlap/separation is not a test of predictive performance.", font=get_font(16), fill="#5E6D7B")
     image.save(FIGURES / "02_pca_pc1_pc2_by_beck_group.png")
 
@@ -187,7 +187,7 @@ def main() -> None:
         f"- PC1 explains {variance_ratio[0]:.1%}; PC2 explains {variance_ratio[1]:.1%}; first two together explain {cumulative[1]:.1%} of predictor variation.",
         f"- Components needed to reach 80% cumulative variance: {int(np.searchsorted(cumulative, 0.8) + 1)}.",
         "- Predictors included age, semester, department, demographic and phone-use responses, app-selection flags, and the recomputed phone-dependence total. The 22 TMD items were left out because the selected analysis uses the total score.",
-        "- Beck total, the 11+ outcome, and student Code were excluded from PCA. The 11+ flag is used only to color the PC1/PC2 visualization.",
+        "- Beck total, the 11+ score-group outcome, and student Code were excluded from PCA. The 11+ score-group flag is used only to color the PC1/PC2 visualization.",
         "- Nominal categories were one-hot encoded. Ordered responses were retained as ordered numeric codes, app-selection flags were converted from 1/2 to 0/1, and all resulting columns were standardized before PCA.",
         "- This is full-dataset exploratory PCA for descriptive visualization and loadings. Do not use these fitted components as model inputs: for prediction, split first and fit encoding, scaling, and PCA inside each training fold.",
         "- PCA captures variation among predictors; it does not show cause and effect or prove that the groups can be predicted accurately.",

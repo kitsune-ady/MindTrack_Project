@@ -1,6 +1,6 @@
 # Depression dataset preparation
 
-This step follows the EDA and creates an analysis table for the single-target depression study. The binary outcome is named `Higher_Beck_Score_11plus` to make clear that it is a provisional questionnaire score group, not a clinical diagnosis.
+This step follows the EDA and creates an analysis table for the single-target depression study. The binary outcome is named `Higher_Beck_Score_11plus` to make clear that it is a project-defined Beck score group (11 or higher), not a clinical diagnosis. It combines score bands 11–16 and all higher bands.
 
 ## Run from the project root
 

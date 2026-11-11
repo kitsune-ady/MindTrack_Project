@@ -1,0 +1,28 @@
+field,required_by_selected_model,model,input_set
+Department,True,Gradient boosting,Full app fields
+Sex,True,Gradient boosting,Full app fields
+MS,True,Gradient boosting,Full app fields
+SES,True,Gradient boosting,Full app fields
+Living_Arrangement,True,Gradient boosting,Full app fields
+Residence_Area,True,Gradient boosting,Full app fields
+Subscription_Plan,True,Gradient boosting,Full app fields
+Network _Access,True,Gradient boosting,Full app fields
+Areas_Use,True,Gradient boosting,Full app fields
+Type_MD,True,Gradient boosting,Full app fields
+Age,True,Gradient boosting,Full app fields
+Semester,True,Gradient boosting,Full app fields
+Family_Expression,True,Gradient boosting,Full app fields
+Family_Activities,True,Gradient boosting,Full app fields
+Mobile_Use_Rules,True,Gradient boosting,Full app fields
+Phone_Discrimination,True,Gradient boosting,Full app fields
+Phone_Related_Arguments,True,Gradient boosting,Full app fields
+Time_First_Cellphone,True,Gradient boosting,Full app fields
+TMD_Total_Recomputed,True,Gradient boosting,Full app fields
+Using_Text Messaging_Apps,True,Gradient boosting,Full app fields
+Using_Games_Apps,True,Gradient boosting,Full app fields
+Using_social media_Apps,True,Gradient boosting,Full app fields
+Using_Music_Apps,True,Gradient boosting,Full app fields
+Using_Videos_Apps,True,Gradient boosting,Full app fields
+Using_Ttime-management_Apps,True,Gradient boosting,Full app fields
+Using_Camara_Apps,True,Gradient boosting,Full app fields
+Using_Mail_Apps,True,Gradient boosting,Full app fields

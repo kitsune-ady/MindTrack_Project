@@ -1,0 +1,28 @@
+field,required_by_selected_model,model,input_set
+Department,True,Random forest,L1-selected app fields
+Sex,False,Random forest,L1-selected app fields
+MS,False,Random forest,L1-selected app fields
+SES,True,Random forest,L1-selected app fields
+Living_Arrangement,True,Random forest,L1-selected app fields
+Residence_Area,True,Random forest,L1-selected app fields
+Subscription_Plan,False,Random forest,L1-selected app fields
+Network _Access,False,Random forest,L1-selected app fields
+Areas_Use,True,Random forest,L1-selected app fields
+Type_MD,True,Random forest,L1-selected app fields
+Age,False,Random forest,L1-selected app fields
+Semester,False,Random forest,L1-selected app fields
+Family_Expression,False,Random forest,L1-selected app fields
+Family_Activities,False,Random forest,L1-selected app fields
+Mobile_Use_Rules,False,Random forest,L1-selected app fields
+Phone_Discrimination,False,Random forest,L1-selected app fields
+Phone_Related_Arguments,True,Random forest,L1-selected app fields
+Time_First_Cellphone,True,Random forest,L1-selected app fields
+TMD_Total_Recomputed,True,Random forest,L1-selected app fields
+Using_Text Messaging_Apps,False,Random forest,L1-selected app fields
+Using_Games_Apps,False,Random forest,L1-selected app fields
+Using_social media_Apps,True,Random forest,L1-selected app fields
+Using_Music_Apps,False,Random forest,L1-selected app fields
+Using_Videos_Apps,False,Random forest,L1-selected app fields
+Using_Ttime-management_Apps,True,Random forest,L1-selected app fields
+Using_Camara_Apps,False,Random forest,L1-selected app fields
+Using_Mail_Apps,False,Random forest,L1-selected app fields

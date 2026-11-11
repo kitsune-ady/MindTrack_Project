@@ -68,8 +68,8 @@ def main() -> None:
         f"- Records retained: {len(output)}; source IDs aligned one-to-one.",
         f"- Candidate predictors: {len(socio_predictors) + len(tmd_items) + 1} (background, phone-use responses, 22 TMD items, and recomputed TMD total).",
         "- Beck total (`Beck_Total`) is the score outcome/reference, not an input feature.",
-        f"- Provisional target `Higher_Beck_Score_11plus`: 1 for Beck total >= 11; positives {positives}, negatives {len(output) - positives}.",
-        "- This is a questionnaire score group for research, not a clinical diagnosis.",
+        f"- Project target `Higher_Beck_Score_11plus`: 1 for Beck total >= 11; positives {positives}, negatives {len(output) - positives}.",
+        "- This is a project-defined questionnaire score group for research, not a clinical diagnosis.",
         f"- TMD total was recomputed from 22 answers; {int(mismatch.sum())} supplied total(s) differed and were not used.",
         "- Beck total matched the sum of its 21 answers for every record.",
         "- No missing values were found in the prepared columns; no imputation or row deletion was needed.",
@@ -80,7 +80,7 @@ def main() -> None:
         "Original workbooks were not modified.",
     ]
     (OUT / "preparation_log.md").write_text("\n".join(summary) + "\n", encoding="utf-8")
-    print(f"Prepared {len(output)} records; provisional higher-score group: {positives}; wrote {OUT}")
+    print(f"Prepared {len(output)} records; project-defined 11+ score group: {positives}; wrote {OUT}")
 
 
 if __name__ == "__main__":

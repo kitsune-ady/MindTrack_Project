@@ -1,0 +1,28 @@
+field,selection_score_abs_l1_coefficient_sum,selected_by_l1,always_keep
+Department,0.7002414469410025,True,False
+Type_MD,0.6966734432467476,True,False
+SES,0.4474710534478199,True,False
+Living_Arrangement,0.4350129915410606,True,False
+Areas_Use,0.357716667986712,True,False
+Residence_Area,0.3557331692892076,True,False
+Using_social media_Apps,0.2949852601597671,True,False
+TMD_Total_Recomputed,0.20127351940864793,True,True
+Using_Ttime-management_Apps,0.19764423254938537,True,False
+Time_First_Cellphone,0.16554656164707304,True,False
+Phone_Related_Arguments,0.15702019039613893,True,False
+Age,0.15637214003704863,False,False
+Using_Games_Apps,0.14583417639876478,False,False
+Semester,0.13306517006356416,False,False
+Family_Activities,0.12310509302267507,False,False
+Family_Expression,0.07826650884816333,False,False
+Phone_Discrimination,0.0749440416751992,False,False
+Using_Mail_Apps,0.058324105493058984,False,False
+Using_Camara_Apps,0.027638037730445816,False,False
+Using_Text Messaging_Apps,0.02598095971082333,False,False
+Mobile_Use_Rules,0.01579216213451258,False,False
+Using_Videos_Apps,0.0027591173528162464,False,False
+Sex,0.0,False,False
+MS,0.0,False,False
+Subscription_Plan,0.0,False,False
+Network _Access,0.0,False,False
+Using_Music_Apps,0.0,False,False

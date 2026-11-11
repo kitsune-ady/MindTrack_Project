@@ -3,8 +3,8 @@
 - Records retained: 1220; source IDs aligned one-to-one.
 - Candidate predictors: 50 (background, phone-use responses, 22 TMD items, and recomputed TMD total).
 - Beck total (`Beck_Total`) is the score outcome/reference, not an input feature.
-- Provisional target `Higher_Beck_Score_11plus`: 1 for Beck total >= 11; positives 218, negatives 1002.
-- This is a questionnaire score group for research, not a clinical diagnosis.
+- Project target `Higher_Beck_Score_11plus`: 1 for Beck total >= 11; positives 218, negatives 1002.
+- This is a project-defined questionnaire score group for research, not a clinical diagnosis.
 - TMD total was recomputed from 22 answers; 1 supplied total(s) differed and were not used.
 - Beck total matched the sum of its 21 answers for every record.
 - No missing values were found in the prepared columns; no imputation or row deletion was needed.

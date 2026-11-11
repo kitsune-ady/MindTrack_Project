@@ -23,4 +23,4 @@ The script reads the three source workbooks under `Digital Sedentary Behavior, M
 
 ## Interpretation notes
 
-The Beck 11+ cutoff is provisional pending lecturer/supervisor confirmation of the Beck form and threshold. Phone-dependence totals used in comparisons are recomputed from the 22 item responses because one supplied total is inconsistent. Small category counts are shown in the charts and tables and should be considered before interpretation.
+The project-defined target is Beck total >=11, combining the 11–16 mild mood-disturbance band with every higher band. Confirm that the Beck form and scoring guide match before presenting this as a depression classification. Phone-dependence totals used in comparisons are recomputed from the 22 item responses because one supplied total is inconsistent. Small category counts are shown in the charts and tables and should be considered before interpretation.

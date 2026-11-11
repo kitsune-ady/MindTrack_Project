@@ -14,7 +14,7 @@ The script writes its charts, tables, and short interpretation under `analysis/p
 ## Outputs
 
 - `figures/01_pca_scree_cumulative_variance.png` — variance explained by each component and cumulatively.
-- `figures/02_pca_pc1_pc2_by_beck_group.png` — student projection onto PC1 and PC2, colored by the provisional 11+ group. The outcome is used only for coloring, not to calculate PCA.
+- `figures/02_pca_pc1_pc2_by_beck_group.png` — student projection onto PC1 and PC2, colored by the project-defined 11+ score group. The outcome is used only for coloring, not to calculate PCA.
 - `tables/pca_explained_variance.csv` — variance and cumulative variance for every component.
 - `tables/pca_loadings_top10.csv` — input loadings for the first 10 components.
 - `tables/pca_student_scores_pc1_pc2.csv` — two component scores and target color label for each student; Code is included only for row traceability and must not be a model input.

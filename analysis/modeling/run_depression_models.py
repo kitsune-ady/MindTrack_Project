@@ -239,7 +239,7 @@ def main(split_only: bool = False) -> None:
     top = importance_frame.head(5)
     summary = [
         "# Depression score-group model comparison", "",
-        "The target is the dataset-defined `Higher_Beck_Score_11plus` grouping, not a clinical diagnosis.",
+        "The target is the project-defined Beck >=11 score group (`Higher_Beck_Score_11plus`). It combines the 11–16 mild mood-disturbance band with all higher bands; it is not a clinical diagnosis.",
         f"- Records: {len(data)}; positive score-group records: {positive} ({positive / len(data):.1%}).",
         f"- Stratified split: 80% training ({len(X_train)} records; {int(y_train.sum())} positives), 20% test ({len(X_test)} records; {int(y_test.sum())} positives); seed {SEED}.",
         "- Compared a most-common baseline with logistic regression, decision tree, random forest, and gradient boosting.",
@@ -255,7 +255,7 @@ def main(split_only: bool = False) -> None:
         summary.append(f"| {row.feature} | {row.permutation_importance_mean_pr_auc_drop:.4f} | {row.permutation_importance_sd:.4f} |")
     summary += [
         "", "See `results/depression_model_comparison.csv` for cross-validation and test metrics, and `results/best_model_permutation_importance.csv` for all input fields.",
-        "The 0.50 threshold is a reporting choice, not a clinical rule. Interpret precision/recall alongside class imbalance and the provisional score-group definition.",
+        "The 0.50 threshold is a reporting choice, not a clinical rule. Interpret precision/recall alongside class imbalance and the project-defined 11+ score-group definition.",
     ]
     (RESULTS / "modeling_summary.md").write_text("\n".join(summary) + "\n", encoding="utf-8")
     print(f"Finished: train={len(X_train)}, test={len(X_test)}, selected={best_key[0]} (PCA={best_key[1]})")

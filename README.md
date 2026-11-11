@@ -46,10 +46,10 @@ MindTrack_Project/
 
 ## Current status
 
-The depression-focused EDA is complete under `analysis/eda/`. A reproducible preparation script and derived analysis dataset are under `analysis/cleaning/` and `data/processed/`. Exploratory PCA outputs are under `analysis/pca/`; predictive PCA is fitted within training folds. The depression-only modeling workflow is under `analysis/modeling/`. `notebooks/Pipeline.ipynb` walks a reviewer through the complete workflow and outputs. The raw data has not been modified. The 11+ target is a dataset-defined score group, not a clinical diagnosis.
+The depression-focused EDA is complete under `analysis/eda/`. A reproducible preparation script and derived analysis dataset are under `analysis/cleaning/` and `data/processed/`. Exploratory PCA outputs are under `analysis/pca/`; predictive PCA is fitted within training folds. The depression-only modeling workflow is under `analysis/modeling/`. `notebooks/Pipeline.ipynb` walks a reviewer through the complete workflow and outputs. The raw data has not been modified. The target is the project-defined Beck score group >=11, not a clinical diagnosis. See `presentation_target_wording.md` for consistent presentation language.
 
 ## Next steps
 
-1. Confirm the questionnaire form and score cutoff with the lecturer; document the decision.
-2. Run the model comparison from `analysis/modeling/` and review the results under `results/`.
-3. Interpret permutation importance as predictive usefulness in this dataset, not as causation.
+1. Confirm that the Beck questionnaire form matches the scoring guide; document the decision to use the project-defined ≥11 score group.
+2. Rerun python analysis/modeling/run_app_ready_models.py to save both the full Gradient Boosting pipeline and the compact 11-field Random Forest pipeline plus their input lists.
+3. For the lecturer demo, use the compact input list to build a multi-step Android form, calculate TMD total from its 22 answers, and connect it to the Python prediction service. Label the output as an estimated Beck 11+ score group, not a diagnosis.

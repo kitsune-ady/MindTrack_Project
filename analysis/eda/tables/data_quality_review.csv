@@ -6,7 +6,7 @@ TMD total,1 supplied total differs from sum of 22 items; code 164.,Recompute TMD
 Beck total,1220 of 1220 totals match 21 item sum.,Retain after confirming instrument scoring.
 Item ranges,TMD items are within 0-4 and Beck items are within 0-3; no invalid item values found.,Retain valid responses.
 Beck instrument,Files say BDI-2; item wording/bands resemble original Beck form; item N label conflicts with body-image wording.,Confirm Beck form and cutoff with lecturer/supervisor.
-Cutoff,Provisional 11+ group 218/1220 (17.9%).,Confirm cutoff; use metrics suited to class imbalance.
+Cutoff,Project-defined 11+ score group 218/1220 (17.9%).,Confirm the questionnaire version and scoring guide; use metrics suited to class imbalance.
 Daily-use category,"Codebook mapping valid; counts 1:205, 2:1, 3:334, 4:680.",Verify the single 1-3h response; avoid overinterpretation.
 Age,16-60; under18=15; over30=129; above Tukey fence=101.,"Within documented range; retain plausible values, check minor reporting."
 High scores,"Above Tukey fences: Beck 65, TMD 3.",Do not remove valid bounded high scores automatically.

@@ -1,41 +1,41 @@
 feature,source_column,method,r,n
-Q8,Q8,Spearman rank,0.29839529764208744,1220
-Q6,Q6,Spearman rank,0.23552341555565554,1220
-Q5,Q5,Spearman rank,0.23043115969291486,1220
-Q18,Q18,Spearman rank,0.19389073094986403,1220
-tmd_total,tmd_total,Spearman rank,0.18193917022129516,1220
-Q9,Q9,Spearman rank,0.16910412139318304,1220
-Age,Age,Spearman rank,-0.16576184549265408,1220
-Q2,Q2,Spearman rank,0.1460112697479573,1220
+Q8,Q8,Spearman rank,0.2983952976420872,1220
+Q6,Q6,Spearman rank,0.23552341555565562,1220
+Q5,Q5,Spearman rank,0.2304311596929148,1220
+Q18,Q18,Spearman rank,0.19389073094986398,1220
+tmd_total,tmd_total,Spearman rank,0.18193917022129505,1220
+Q9,Q9,Spearman rank,0.16910412139318295,1220
+Age,Age,Spearman rank,-0.16576184549265405,1220
+Q2,Q2,Spearman rank,0.14601126974795722,1220
 Q13,Q13,Spearman rank,0.13445113157662078,1220
-Average_Time_Use,Average_Time_Use,Spearman rank,-0.13410291876864044,1220
-Q14,Q14,Spearman rank,0.11951357892232407,1220
-Q22,Q22,Spearman rank,0.11010284105449024,1220
-Q12,Q12,Spearman rank,0.1096706790369337,1220
-Family_Activities,Family_Activities,Spearman rank,0.10625452310607711,1220
-Q15,Q15,Spearman rank,0.1020991294383913,1220
-Phone_Related_Arguments,Phone_Related_Arguments,Spearman rank,0.1010824168065819,1220
-TMD                    Q1,TMD                    Q1,Spearman rank,0.09968349437921777,1220
-Social media,Using_social media_Apps,Point-biserial Yes=1,-0.09833448142583857,1220
-Q17,Q17,Spearman rank,0.09052419975192781,1220
-Time-management,Using_Ttime-management_Apps,Point-biserial Yes=1,0.08703804362411839,1220
-Videos,Using_Videos_Apps,Point-biserial Yes=1,0.08505971081414404,1220
-Semester,Semester,Spearman rank,-0.08424031755966849,1220
-Q11,Q11,Spearman rank,0.08201014988113878,1220
-Q19,Q19,Spearman rank,0.0785147021514824,1220
+Average_Time_Use,Average_Time_Use,Spearman rank,-0.1341029187686403,1220
+Q14,Q14,Spearman rank,0.119513578922324,1220
+Q22,Q22,Spearman rank,0.11010284105449016,1220
+Q12,Q12,Spearman rank,0.10967067903693375,1220
+Family_Activities,Family_Activities,Spearman rank,0.1062545231060771,1220
+Q15,Q15,Spearman rank,0.10209912943839129,1220
+Phone_Related_Arguments,Phone_Related_Arguments,Spearman rank,0.10108241680658189,1220
+TMD                    Q1,TMD                    Q1,Spearman rank,0.09968349437921778,1220
+Social media,Using_social media_Apps,Point-biserial Yes=1,-0.0983344814258384,1220
+Q17,Q17,Spearman rank,0.09052419975192784,1220
+Time-management,Using_Ttime-management_Apps,Point-biserial Yes=1,0.08703804362411842,1220
+Videos,Using_Videos_Apps,Point-biserial Yes=1,0.08505971081414401,1220
+Semester,Semester,Spearman rank,-0.08424031755966847,1220
+Q11,Q11,Spearman rank,0.08201014988113875,1220
+Q19,Q19,Spearman rank,0.07851470215148247,1220
 Q4,Q4,Spearman rank,0.07492928311496017,1220
-Text/instant messaging,Using_Text Messaging_Apps,Point-biserial Yes=1,-0.06841158451925032,1220
-Q21,Q21,Spearman rank,0.06242230381291891,1220
-Time_First_Cellphone,Time_First_Cellphone,Spearman rank,0.05696739900446691,1220
-Games,Using_Games_Apps,Point-biserial Yes=1,0.05341673652317694,1220
-Q10,Q10,Spearman rank,0.051968680892282404,1220
-Q20,Q20,Spearman rank,0.04569829421022833,1220
-Music,Using_Music_Apps,Point-biserial Yes=1,0.039719110703691066,1220
-Mail,Using_Mail_Apps,Point-biserial Yes=1,0.03927182581724773,1220
-Q7,Q7,Spearman rank,0.03836919087154354,1220
-Camera,Using_Camara_Apps,Point-biserial Yes=1,0.038347718382241124,1220
-Q3,Q3,Spearman rank,-0.034476149706412454,1220
-Phone_Discrimination,Phone_Discrimination,Spearman rank,-0.0313098130728444,1220
+Text/instant messaging,Using_Text Messaging_Apps,Point-biserial Yes=1,-0.06841158451925018,1220
+Q21,Q21,Spearman rank,0.06242230381291893,1220
+Time_First_Cellphone,Time_First_Cellphone,Spearman rank,0.0569673990044669,1220
+Games,Using_Games_Apps,Point-biserial Yes=1,0.05341673652317691,1220
+Q10,Q10,Spearman rank,0.051968680892282376,1220
+Q20,Q20,Spearman rank,0.045698294210228356,1220
+Music,Using_Music_Apps,Point-biserial Yes=1,0.039719110703691135,1220
+Mail,Using_Mail_Apps,Point-biserial Yes=1,0.03927182581724781,1220
+Q7,Q7,Spearman rank,0.038369190871543495,1220
+Camera,Using_Camara_Apps,Point-biserial Yes=1,0.03834771838224118,1220
+Q3,Q3,Spearman rank,-0.03447614970641248,1220
+Phone_Discrimination,Phone_Discrimination,Spearman rank,-0.03130981307284441,1220
 Q16,Q16,Spearman rank,0.030040231801675654,1220
-Mobile_Use_Rules,Mobile_Use_Rules,Spearman rank,0.017951426598607722,1220
-Family_Expression,Family_Expression,Spearman rank,0.017390522331353988,1220
+Mobile_Use_Rules,Mobile_Use_Rules,Spearman rank,0.017951426598607732,1220
+Family_Expression,Family_Expression,Spearman rank,0.017390522331353967,1220

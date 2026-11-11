@@ -1,6 +1,6 @@
 # Depression score-group model comparison
 
-The target is the dataset-defined `Higher_Beck_Score_11plus` grouping, not a clinical diagnosis.
+The target is the project-defined Beck >=11 score group (`Higher_Beck_Score_11plus`). It combines the 11–16 mild mood-disturbance band with all higher bands; it is not a clinical diagnosis.
 - Records: 1220; positive score-group records: 218 (17.9%).
 - Stratified split: 80% training (976 records; 174 positives), 20% test (244 records; 44 positives); seed 42.
 - Compared a most-common baseline with logistic regression, decision tree, random forest, and gradient boosting.
@@ -21,4 +21,4 @@ The target is the dataset-defined `Higher_Beck_Score_11plus` grouping, not a cli
 | Living_Arrangement | 0.0102 | 0.0102 |
 
 See `results/depression_model_comparison.csv` for cross-validation and test metrics, and `results/best_model_permutation_importance.csv` for all input fields.
-The 0.50 threshold is a reporting choice, not a clinical rule. Interpret precision/recall alongside class imbalance and the provisional score-group definition.
+The 0.50 threshold is a reporting choice, not a clinical rule. Interpret precision/recall alongside class imbalance and the project-defined 11+ score-group definition.
