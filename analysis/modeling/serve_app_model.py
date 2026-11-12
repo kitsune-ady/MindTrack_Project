@@ -13,7 +13,7 @@ HOST = "0.0.0.0"
 PORT = 8765
 FIELDS = [
     "Department", "SES", "Living_Arrangement", "Residence_Area", "Areas_Use",
-    "Type_MD", "Phone_Related_Arguments", "Time_FirstCellphone",
+    "Type_MD", "Phone_Related_Arguments", "Time_First_Cellphone",
     "TMD_Total_Recomputed", "Using_social media_Apps",
     "Using_Ttime-management_Apps",
 ]
